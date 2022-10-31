@@ -3,6 +3,7 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:travel_app/widgets/ChooseCategory.dart';
 import 'package:travel_app/widgets/app_bar.dart';
+import 'package:travel_app/widgets/choose_place.dart';
 import 'package:travel_app/widgets/seacrh.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -34,6 +35,10 @@ class HomeScreen extends StatelessWidget {
                 height: 30,
               ),
               ChooseCategory(),
+              SizedBox(
+                height: 30,
+              ),
+              ChoosePlace(),
             ],
           ),
         ],

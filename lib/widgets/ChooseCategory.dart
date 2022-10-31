@@ -62,6 +62,9 @@ class CategoryRow extends StatelessWidget {
             ),
           ),
         ),
+        SizedBox(
+          width: 25,
+        ),
         CategoryCard(
           image: Image.asset(
             'images/3.png',
@@ -93,13 +96,13 @@ class CategoryCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 130,
-      height: 50,
+      width: 150,
+      height: 60,
       padding: EdgeInsets.fromLTRB(3, 0, 0, 0),
       decoration: BoxDecoration(
         border: Border.all(color: Colors.grey),
         borderRadius: BorderRadius.all(Radius.circular(5.0)),
-      ),
+      ), 
       child: Center(
           child: Row(
         // mainAxisAlignment: MainAxisAlignment.spaceBetween,
