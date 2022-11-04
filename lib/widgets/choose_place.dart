@@ -14,13 +14,18 @@ class ChoosePlace extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         padding: const EdgeInsets.all(8),
         children: [
-          PlaceCard(imagePath: 'images/4.png'),
+          PlaceCard(
+            imagePath: 'images/4.png',
+            placeLocation: "Bali, Indonesia",
+            placeName: "Kuta Beach",
+          ),
           SizedBox(
             width: 20,
           ),
           PlaceCard(
-            imagePath: 'images/6.png',
-          ),
+              imagePath: 'images/6.png',
+              placeLocation: "Goa , India",
+              placeName: "Baga Beach"),
         ],
       ),
     );
@@ -28,10 +33,14 @@ class ChoosePlace extends StatelessWidget {
 }
 
 class PlaceCard extends StatelessWidget {
+  final String placeName;
+  final String placeLocation;
   final String imagePath;
   const PlaceCard({
     Key? key,
     required this.imagePath,
+    required this.placeName,
+    required this.placeLocation,
   }) : super(key: key);
 
   @override
@@ -69,7 +78,7 @@ class PlaceCard extends StatelessWidget {
               child: Column(
                 children: [
                   Text(
-                    "Kuta Beach",
+                    "$placeName",
                     style: TextStyle(
                         fontSize: 20,
                         color: Colors.white,
@@ -86,7 +95,7 @@ class PlaceCard extends StatelessWidget {
                         width: 5,
                       ),
                       Text(
-                        "Bali, Indonesia",
+                        "$placeLocation",
                         style: TextStyle(
                             fontSize: 12,
                             color: Colors.white,
