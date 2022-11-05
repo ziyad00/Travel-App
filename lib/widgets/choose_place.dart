@@ -106,53 +106,64 @@ class PlaceCard extends StatelessWidget {
                   SizedBox(
                     height: 10,
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Icon(
-                        Icons.star,
-                        color: Colors.yellow,
-                        size: 12,
-                      ),
-                      Icon(
-                        Icons.star,
-                        color: Colors.yellow,
-                        size: 12,
-                      ),
-                      Icon(
-                        Icons.star,
-                        color: Colors.yellow,
-                        size: 12,
-                      ),
-                      Icon(
-                        Icons.star,
-                        color: Colors.white,
-                        size: 12,
-                      ),
-                      Icon(
-                        Icons.star,
-                        color: Colors.white,
-                        size: 12,
-                      ),
-                      SizedBox(
-                        width: 5,
-                      ),
-                      Text(
-                        "4.2",
-                        style: TextStyle(
-                            fontSize: 12,
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold),
-                      ),
-                    ],
-                  ),
+                  Stars(),
                 ],
               ),
             ),
           ],
         ));
+  }
+}
+
+class Stars extends StatelessWidget {
+  const Stars({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.start,
+      children: [
+        SizedBox(
+          width: 10,
+        ),
+        Icon(
+          Icons.star,
+          color: Colors.yellow,
+          size: 12,
+        ),
+        Icon(
+          Icons.star,
+          color: Colors.yellow,
+          size: 12,
+        ),
+        Icon(
+          Icons.star,
+          color: Colors.yellow,
+          size: 12,
+        ),
+        Icon(
+          Icons.star,
+          color: Colors.white,
+          size: 12,
+        ),
+        Icon(
+          Icons.star,
+          color: Colors.white,
+          size: 12,
+        ),
+        SizedBox(
+          width: 5,
+        ),
+        Text(
+          "4.2",
+          style: TextStyle(
+              fontSize: 12,
+              color: Colors.white,
+              fontWeight: FontWeight.bold),
+        ),
+      ],
+    );
   }
 }

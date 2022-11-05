@@ -18,33 +18,34 @@ class HomeScreen extends StatelessWidget {
           SizedBox(
             width: 20,
           ),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              SizedBox(
-                height: 50,
-              ),
-              AppBarCustom(
-                name: 'Vineetha',
-              ),
-              SizedBox(
-                height: 30,
-              ),
-              Search(),
-              SizedBox(
-                height: 30,
-              ),
-              ChooseCategory(),
-              SizedBox(
-                height: 30,
-              ),
-              ChoosePlace(),
-              SizedBox(
-                height: 10,
-              ),
-              PopularPackages(),
-            ],
+          Expanded(
+
+            child: ListView(
+              children: [
+                SizedBox(
+                  height: 50,
+                ),
+                AppBarCustom(
+                  name: 'Vineetha',
+                ),
+                SizedBox(
+                  height: 30,
+                ),
+                Search(),
+                SizedBox(
+                  height: 30,
+                ),
+                ChooseCategory(),
+                SizedBox(
+                  height: 30,
+                ),
+                ChoosePlace(),
+                SizedBox(
+                  height: 10,
+                ),
+                PopularPackages(),
+              ],
+            ),
           ),
         ],
       ),

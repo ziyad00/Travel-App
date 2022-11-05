@@ -25,6 +25,7 @@ class ChooseCategory extends StatelessWidget {
               "See all",
               style: TextStyle(
                 fontSize: 12,
+                color: Color(0xFF767676),
               ),
             ),
           ],
@@ -100,9 +101,9 @@ class CategoryCard extends StatelessWidget {
       height: 60,
       padding: EdgeInsets.fromLTRB(3, 0, 0, 0),
       decoration: BoxDecoration(
-        border: Border.all(color: Colors.grey),
-        borderRadius: BorderRadius.all(Radius.circular(5.0)),
-      ), 
+        border: Border.all(color: Color(0xFFC4C4C4)),
+        borderRadius: BorderRadius.all(Radius.circular(15.0)),
+      ),
       child: Center(
           child: Row(
         // mainAxisAlignment: MainAxisAlignment.spaceBetween,
